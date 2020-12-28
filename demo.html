@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
-<title>m@8u creative portfolio</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="dostyle.css">
-
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/w3images/profile_girl.jpg');
+  min-height: 100%;
+}
+</style>
 <body>
-<!-- Left Sidebar with stable 40% width image -->
+
+<!-- Sidebar with image -->
 <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
   <div class="bgimg"></div>
 </nav>
 
-<!-- Hidden Sidebar nav (reveals when clicked on menu icon)-->
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
 <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
   <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
     <i class="fa fa-remove"></i>
   </a>
   <div class="w3-bar-block w3-center">
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
     <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
     <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
   </div>
@@ -35,8 +45,8 @@
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>m@8u</b></h1>
-    <p>Digital ink, comics and code</p>
+    <h1 class="w3-jumbo"><b>Jane Doe</b></h1>
+    <p>Photographer and Web Designer.</p>
     <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
     <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
     <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
@@ -77,15 +87,15 @@
       elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
     <h3 class="w3-padding-16">My Skills</h3>
-    <p class="w3-wide">Linux</p>
+    <p class="w3-wide">Photography</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
     </div>
-    <p class="w3-wide">Krita</p>
+    <p class="w3-wide">Web Design</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
     </div>
-    <p class="w3-wide">HTML/CSS/JAVASCRIPT</p>
+    <p class="w3-wide">Photoshop</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
     </div><br>
@@ -101,7 +111,7 @@
       </div>
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">89+</span><br>
-        Under construction
+        Happy Clients
       </div>
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">150+</span><br>
@@ -114,7 +124,7 @@
     </button>
 
     <!-- Testimonials -->
-    <h3 class="w3-padding-24">Work related</h3>
+    <h3 class="w3-padding-24">My Reputation</h3>
     <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
     <p>Jane Doe is just awesome. I am so happy to have met her!</p><br>
@@ -128,7 +138,7 @@
     <p>No one is better than Jane Doe.</p><br>
 
     <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16">My Tutorials</h3>
+    <h3 class="w3-padding-16">My Price</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-center w3-card w3-hover-shadow">
