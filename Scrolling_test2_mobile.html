@@ -6,14 +6,68 @@
 
     <style>
 
-        h2 {
+        h1,h2,p {
             color: white;
         }
+
+/* Η card είναι στο 94% του πλάτους της screen */
 
         .card {
             display: inline-block;
 
         }
+
+        .card {
+            flex: 0 0 auto;
+            margin-right: 2vw;
+        } 
+
+        .card {
+            border: 0px solid rgb(168, 168, 168);
+            width: 94vw;
+            height: 94vh;
+            background: rgb(168, 168, 168);
+        }
+
+/* Η card-50 είναι ίδια με την card αλλά σε μισό πλάτος */
+
+        .card-50 {
+            display: inline-block;
+
+        }
+
+        .card-50 {
+            flex: 0 0 auto;
+            margin-right: 2vw;
+        } 
+
+        .card-50 {
+            border: 0px solid rgb(168, 168, 168);
+            width: 47vw;
+            height: 94vh;
+            background: rgb(168, 168, 168);
+        }
+
+/* Η card-30 είναι ίδια με την card αλλά στο ένα τρίτο του πλάτους */
+
+        .card-30 {
+            display: inline-block;
+
+        }
+
+        .card-30 {
+            flex: 0 0 auto;
+            margin-right: 2vw;
+        } 
+
+        .card-30 {
+            border: 0px solid rgb(168, 168, 168);
+            width: 27vw;
+            height: 94vh;
+            background: rgb(168, 168, 168);
+        }
+
+/* Δεν αλλάζουμε ποτέ τα scrolling-wrapper-flexbox και scrolling-wrapper που ορίζουν το κυλιόμενο τμήμα της σελίδας */
 
         .scrolling-wrapper-flexbox {
             display: flex;
@@ -21,28 +75,17 @@
             overflow-x: auto;
         }
 
-        .card {
-            flex: 0 0 auto;
-            margin-right: 1vw;
-        }
-        
-
-        .card {
-            border: 2px solid rgb(168, 168, 168);
-            width: 94vw;
-            height: 96vh;
-            background: rgb(168, 168, 168);
-        }
-
         .scrolling-wrapper, .scrolling-wrapper-flexbox {
-            height: 97vh;
-            margin-bottom: 5px;
+            height: 97vh; 
+            margin-bottom: 0px;
             width: 100%;
             -webkit-overflow-scrolling: touch;
             &::-webkit-scrollbar {
                 display: none;
             }
         }
+
+
     </style>
 
 </head>
@@ -52,38 +95,48 @@
     <section class="content">
 
         <div class="scrolling-wrapper-flexbox">
+
+            <div class="card-50">
+                <h1>This is a Header</h1>
+                <p>This is a paragraph.</p>
+            </div>
+
+            <div class="card-30">
+                <img src="img/Aloe.jpg" style="object-fit:contain;height:100%;width:100%;">
+            </div>
+
+            <div class="card">
+                <img src="img/Sofa.jpg" style="object-fit:contain;height:100%;width:100%;">
+            </div>
+
+            <div class="card-50">
+                <img src="styles/chair_g2.jpg" style="object-fit:contain;height:100%;width:100%;">
+            </div>
+
             <div class="card">
                 <h2>Card</h2>
             </div>
+
             <div class="card">
                 <h2>Card</h2>
             </div>
+
             <div class="card">
                 <h2>Card</h2>
             </div>
+
             <div class="card">
                 <h2>Card</h2>
             </div>
+
             <div class="card">
                 <h2>Card</h2>
             </div>
-            <div class="card">
-                <h2>Card</h2>
-            </div>
-            <div class="card">
-                <h2>Card</h2>
-            </div>
-            <div class="card">
-                <h2>Card</h2>
-            </div>
-            <div class="card">
-                <h2>Card</h2>
-            </div>
+
         </div>
 
     </section>
 </main>
- 
 </body>
 
 </html>
