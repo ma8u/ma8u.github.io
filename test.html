@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+
+    <script>
+        // Get the screen dimensions
+        const screenWidth = window.screen.width;
+        const screenHeight = window.screen.height;
+
+        // Calculate the screen ratio
+        const screenRatio = screenWidth / screenHeight;
+
+        // Select the appropriate CSS based on the screen ratio
+        if (screenRatio >= 1) {
+            // Load CSS for wide screens
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'wide-screen.css';
+            document.head.appendChild(link);
+        } else {
+            // Load CSS for narrow screens
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'narrow-screen.css';
+            document.head.appendChild(link);
+        }
+    </script>
+</head>
+<body>
+
+    <div id="wide">
+        <h1>Wide screen</h1>
+    </div>
+
+    <div id="narrow">
+        <h1>Narrow screen</h1>
+    </div>
+    
+</body>
+</html>
